@@ -18,7 +18,7 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
-every 1.day, :at => '10:37 pm' do
+every :day, :at => '11:07 pm' do
 	runner "User.go_to_next_person"
 	command "echo 'YOOO THIS WORKS' "
 end

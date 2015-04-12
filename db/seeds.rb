@@ -14,3 +14,4 @@ end
 
 u = User.find_by(name: "Michelle")	
 u.update(last_time: Date.today.prev_day)
+u.update(is_current: true)
