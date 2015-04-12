@@ -10,4 +10,7 @@ users = ['Michelle', 'Garett', 'Blair', 'Arvind', 'Elisha', 'Robert', 'Andrew', 
 
 users.each do |name|
 	User.create(name: name, email: name.downcase + '@blahtest.com')
-end	
+end
+
+u = User.find_by(name: "Michelle")	
+u.update(last_time: Date.today.prev_day)
